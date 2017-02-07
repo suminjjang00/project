@@ -1,0 +1,23 @@
+{
+  "name": "yup",
+  "version": "1.0.0",
+  "description": "pass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suminjjang00/project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suminjjang00/project/issues"
+  },
+  "homepage": "https://github.com/suminjjang00/project#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0"
+  }
+}
