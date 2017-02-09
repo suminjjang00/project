@@ -2,9 +2,27 @@
 <html>
   <head>
     <title>journey p</title>
+    {{#if showTest}}
+      <link rel="stylesheet" href="/vender/mocha.css" />
+      {{/if}}
+      <script src="//code.jquery.com/jquery-2.0.2.min.js"></script>
   </head>
   <body>
     <img src='/img/img.png' alt='journey logo'/>
     {{{body}}}
+    {{#if showTest}}
+    <div id='mocha'></div>
+    <script src="/vender/mocha.js"></script>
+    <script src="/vender/chai.js"></script>
+    <script>
+      mocha.ui('tdd');
+      var assert = chai.assert;
+    </script>
+    <script src="/qa/tests-global.js"></script>
+    {{#if pageTestScript}}
+      <script src="{{pageTestScript}}"></script>
+      {{/if}}
+      <script>mocha.run();</script>
+    {{/if}}
   </body>
 </html>
